@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Desibaazaar</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+
+    <div id="loginpage">
+        <img src="logo.png" alt="" width="180px" id="img">
+        <h2 id="h2">Sign in or create account</h2>
+
+        <form id="form" onsubmit="return validate()">
+            <label><b>Enter mobile number or email</b></label><br>
+            <input type="text" id="enter" autocomplete="off"><br><br>
+
+            <p id="text"></p>
+
+            <input type="submit" value="Continue" id="button">
+        </form>
+
+        <p>
+            By continuing, you agree to our 
+            <a href="#">Conditions of Use</a> and 
+            <a href="#">Privacy Notice</a>.
+        </p>
+    </div>
+
+<script src="loginpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+    z-index: 10;
+}
+
+/* Logo */
+#logo {
+    width: 120px;
+    margin-right: 20px;
+}
+
+/* Left Navigation */
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Nav item */
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-item img {
+    width: 38px;
+    transition: 0.2s;
+}
+
+.nav-item:hover img {
+    transform: scale(1.15);
+}
+.nav-item:hover span {
+    color: #ff9900;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    justify-content: center;
+    width: 38%;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Right Nav */
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-btn {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-btn {
+    background: #ff6700;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-btn:hover {
+    background: #00ff5e;
+    color: black;
+}
+
+/* SLIDER */
+.slider {
+    margin-top: 80px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Individual slide */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 16s infinite;
+}
+
+/* Slide timings */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+.slide:nth-child(4) { animation-delay: 12s; }
+
+/* Fade Animation */
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    35% { opacity: 1; }
+    45% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Section Image */
+.image {
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.image h2 {
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #f1e7e0;
+    padding: 50px 80px;
+    color: #000;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: 220px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin: 6px 0;
+    transition: .3s;
+}
+
+.footer-section a:hover {
+    color: #d35400;
+}
+
+.footer-social {
+    margin-top: 30px;
+}
+
+.footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons i:hover {
+    color: #d35400;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Offers Slider */
+.offers-slider {
+    margin-top: 5px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.offers-slider h2 {
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.offers-track {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    animation: scroll 18s linear infinite;
+}
+
+.offers-track img {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.offers-track img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Half images move */
+}
+
+
+/* Media Query for devices <= 768px (Tablet + Mobile) */
+@media (max-width: 768px) {
+
+    /* Top Navbar (Logo + Login/Signup) */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.85);
+        flex-wrap: nowrap;
+    }
+
+    #logo {
+        width: 60px;
+        position: relative;
+    }
+
+    .right-nav {
+        display: flex;
+        gap: px;
+        margin-left: 10px;  
+        width: 120px;
+    }
+
+    .login-btn, .signup-btn {
+        font-size: 14px;
+        padding: 1.5px 3px;
+        border-radius: 3px;
+    }
+
+    .signup-btn {
+        background: #ff6700;
+        color: white;
+    }
+
+    .signup-btn:hover {
+        background: #00ff5e;
+        color: black;
+    }
+
+    .login-btn {
+        color: yellow;
+    }
+
+    /* Categories / Products below top bar */
+    .left-nav {
+        margin-top: 10px;
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        width: 100%;
+    
+    }
+
+    .left-nav .nav-item {
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        min-width: 80px;
+    }
+
+    .nav-item img {
+        width: 30px;
+    }
+
+    .nav-item span {
+        font-size: 10px;
+    
+    }
+
+    .left-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Slider adjustments */
+    .slider {
+        margin-top: 60px;
+        height: 250px;
+    }
+
+    .slide img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /* Offers Slider */
+    .offers-track {
+        gap: 10px;
+        animation: none;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
+
+    .offers-track img {
+        width: 200px;
+        height: auto;
+    }
+
+    .offers-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
+
+    .chat img {
+        width: 100%;
+        height: auto;
+    }
+}

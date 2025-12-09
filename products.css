@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0f12;
+    color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+.logo {
+    color: #1fe374;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+nav a:hover {
+    color: #1fe374;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #1fe374;
+    bottom: -4px;
+    left: 0;
+    transition: .3s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Menu section */
+.menu-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+.menu-box {
+    width: 250px;
+    margin: 15px;
+}
+.menu-box h3 {
+    color: #1fe374;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+}
+.menu-box li {
+    margin: 14px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s ease, transform .3s;
+}
+.menu-box li i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.menu-box li:hover {
+    color: #1fe374;
+    transform: translateX(5px);
+}
