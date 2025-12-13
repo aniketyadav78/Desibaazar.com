@@ -34,7 +34,7 @@ function validate() {
     return false;
 }
 
-// Next Page Redirect
+    // Next Page Redirect -
 function goToNextPage() {
     window.location.href = "enter.html";
 }
