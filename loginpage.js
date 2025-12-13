@@ -36,5 +36,5 @@ function validate() {
 
 // Next Page Redirect
 function goToNextPage() {
-    window.location.href = "login page2.html";
+    window.location.href = "enter.html";
 }
