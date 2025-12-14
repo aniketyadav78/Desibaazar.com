@@ -1,0 +1,102 @@
+#loginpage{
+    margin-top: 70px;
+    margin-left: 450px;
+    align-items: center;
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ddd; 
+  border-radius: 6px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+}
+#enter{
+padding: 4px 25px;
+}
+
+.back{
+    color: black;
+    text-decoration: none;
+    margin-top: 0%;
+}
+.card h2{
+    margin-left: 55px;
+    font-size: 32px;
+}
+
+.subtitle{
+    margin-left: 0px;
+    font-size: 20px;
+    color: brown;
+}
+
+#img{
+    margin-left: 65px;
+}
+#h2{
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#form{
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+.button{
+    border-radius: 5px;
+    margin-left: 85px;
+    padding: 4px 40px;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+
+.login-link{
+    margin-left: 70px;
+}
+
+.login{
+    
+    margin-left: 60px;
+}
+@media (max-width: 768px) {
+
+  #loginpage{
+    margin-top: 70px;
+    
+    margin-left: 0px;
+    align-items: center;
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ddd; 
+  border-radius: 6px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+}
+#enter{
+padding: 4px 25px;
+}
+#button{
+    
+  padding: 6px 70px;
+  font-size: 18px;
+    border-radius: 10px;
+   background-color: rgb(250, 124, 7);
+   
+}
+#img{
+    margin-left: 65px;
+}
+#h2{
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#form{
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+
+}

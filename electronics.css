@@ -1,0 +1,141 @@
+
+
+/* CSS File: electronics.css */
+*{margin:0;padding:0;box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}
+body {
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+    z-index: 10;
+}
+
+/* Logo */
+#logo {
+    width: 120px;
+    margin-right: 20px;
+}
+
+/* Left Navigation */
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Nav item */
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content:space-evenly;
+    text-align: center;
+    gap: 10px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1;                 
+    max-width: 90px;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item span {
+    display: block;
+    text-align: center;   
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+
+.nav-item span{
+    margin-top: px;
+}
+
+.nav-item img {
+    width: 38px;
+    transition: 0.2s;
+}
+
+.nav-item:hover img {
+    transform: scale(1.15);
+}
+.nav-item:hover span {
+    color: #ff9900;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    justify-content: center;
+    width: 38%;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+.bag{
+    width: 30px;
+}
+
+body{background:#f5f5f5;}
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+.top-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;}
+.logo{font-size:22px;font-weight:bold;color:#ff6f00;}
+.icons i{font-size:18px;margin-left:15px;cursor:pointer;}
+.head:hover{
+    width: 70px;
+}
+
+.search-box{padding:10px 16px;}
+.search-box input{width:100%;padding:10px 14px;border-radius:25px;border:1px solid #ccc;outline:none;}
+.banner{margin:15px;margin-top: 110px; border-radius:12px;overflow:hidden;}
+.banner img{width:100%;display:block;}
+.category{display:flex;overflow-x:auto;padding:10px 10px;gap:12px;}
+.category::-webkit-scrollbar{display:none;}
+.cat-item{min-width:90px;background:#fff;border-radius:10px;text-align:center;padding:10px 5px;box-shadow:0 2px 6px rgba(0,0,0,0.1);cursor:pointer;}
+.cat-item img{width:50px;height:50px;object-fit:contain;}
+.cat-item p{font-size:13px;margin-top:5px;}
+.products{padding:15px;display:grid;grid-template-columns:repeat(2,1fr);gap:15px;}
+.product-card{background:#fff;border-radius:12px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:0.3s;}
+.product-card:hover{transform:scale(1.05);}
+.product-card img{width:100%;height:140px;object-fit:contain;}
+.product-card h4{font-size:14px;margin:8px 0 4px;}
+.price{font-size:15px;font-weight:bold;color:#2e7d32;}
+.old-price{font-size:12px;color:#999;text-decoration:line-through;margin-left:6px;}
+.rating{font-size:12px;color:#ff9800;margin:4px 0;}
+.add-cart{width:100%;padding:8px;border:none;border-radius:8px;background:#ff6f00;color:#fff;cursor:pointer;margin-top:6px;}
+

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero */
+.about-hero {
+    background: linear-gradient(to right, #2874f0, #1b5fd1);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+}
+
+.about-hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Content */
+.about-content {
+    padding: 60px 80px;
+    background: #f5f5f5;
+}
+
+.about-box {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-box h2 {
+    margin-bottom: 15px;
+}
+
+.about-box p,
+.about-box ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-box ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+/* Stats */
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #172337;
+    color: white;
+    padding: 50px 20px;
+}
+
+.stat h3 {
+    font-size: 32px;
+}
+
+.stat p {
+    margin-top: 5px;
+}
+
+/* Footer */
+.about-footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f1a2c;
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 30px;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+.home {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: white;
+    color: #081120;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.home:hover {
+    background: #f1f1f1;
+}
+
+/* ===============================
+   GOOGLE MOBILE RESPONSIVE
+   =============================== */
+@media (max-width: 600px) {
+.home{
+    position: relative;
+}
+    /* Body */
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .about-hero {
+        padding: 70px 16px;
+    }
+
+    .about-hero h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+    /* Content */
+    .about-content {
+        padding: 20px 16px;
+    }
+
+    .about-box {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .about-box h2 {
+        font-size: 20px;
+    }
+
+    .about-box p,
+    .about-box ul {
+        font-size: 15px;
+    }
+
+    /* Stats Section */
+    .about-stats {
+        flex-direction: column;
+        padding: 35px 16px;
+        gap: 18px;
+    }
+
+    .stat h3 {
+        font-size: 24px;
+    }
+
+    .stat p {
+        font-size: 14px;
+    }
+
+    /* Home Button */
+    .home {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        padding: 6px 12px;
+        font-size: 13px;
+        z-index: 100;
+    }
+
+    /* Footer */
+    .about-footer {
+        font-size: 13px;
+        padding: 16px;
+    }
+}

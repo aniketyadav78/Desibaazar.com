@@ -1,10 +1,16 @@
 function validate() {
     let enter = document.querySelector('#enter').value.trim();
     let msg = document.querySelector('#text');
+    let pass=document.querySelector('#pass').value.trim();
 
     msg.style.color = "red";
     msg.style.fontSize = "14px";
 
+    if(pass==""){
+        msg.innerText = "Invalid Password !";
+        return false;
+    }
+    
     // Empty input check
     if (enter === "") {
         msg.innerText = "Please enter email or mobile number!";
@@ -25,7 +31,7 @@ function validate() {
 
     // Gmail check
     if (!enter.includes('@') || !enter.endsWith('@gmail.com')) {
-        msg.innerText = "Enter valid Gmail ID!";
+        msg.innerText = "Enter valid Gmail ID !";
         return false;
     }
 
